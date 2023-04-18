@@ -1,0 +1,67 @@
+@import 'color';
+@import 'font';
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    .profilePic{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    .socialCard{
+        background-color: $bgTab;
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 8px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .3s;
+        padding-right: 3px;
+        padding-left: 3px;
+
+        &:hover{
+            background-color: $primaryColor;
+        }
+    }
+}
+.btnCv{
+    border: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px 40px;
+    background-image: linear-gradient(to right, rgb(197, 94, 94) , rgb(250 82 82) );
+    
+    &:hover{
+        background-image: linear-gradient(to right, rgb(250 82 82) ,rgb(197, 94, 94) );
+    }
+
+    svg path{
+        fill:$textColor;
+    }
+}
+
+
+/******Light Mode*****/
+.lightTheme .socialCard{
+    background-color: #fff;
+
+}

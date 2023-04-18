@@ -1,0 +1,57 @@
+@font-face {
+    font-family: byekan;
+    src: url(fonts/Yekan.eot);
+    src: url(fonts/Yekan.woff) format('woff');
+    src: url(fonts/Yekan.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    body{
+    font-family: byekan;
+    }
+    .whiteText{
+        color:$textColor;
+    }
+    
+    .fontLgPink{
+        font-size: 28px;
+        font-weight: 550;
+        line-height: 26px;
+        color:rgb(250 82 82);
+
+    }
+
+    .fontMd{
+        font-size: 33px;
+        color: $textColor;
+    }
+    .fontMd.textGray{
+        color:rgb(189, 189, 189);
+    }
+    .fontSm{
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 26px;
+        color:rgb(189, 189, 189);
+    }
+
+    h1.whiteText{
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+
+    /*******Light Fonts********/
+    .lightTheme .whiteText{
+        color:$textColorLight;
+      }
+      .lightTheme .fontMd{
+        color:$textColorLight;
+      }
+    
+      .lightTheme .fontMd.textGray{
+        color: #44566c;
+    }
+    .lightTheme .fontSm{
+      color: rgb(68, 86 ,108);
+    }

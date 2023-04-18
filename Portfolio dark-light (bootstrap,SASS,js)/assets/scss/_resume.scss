@@ -1,0 +1,87 @@
+@import 'color';
+@import 'font';
+
+#resume{
+    margin-top: 20px;
+    padding-top: 70px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.innerResume{
+    width: 100%;
+    border-radius: 20px;
+    background-color: $bgSecColor;
+    padding: 30px 0px;
+    &:hover .lineAbout{
+        margin-right: 42px;
+    }
+}
+
+.lineAbout{
+    margin-right: 75px;
+    transition-duration: .5s;
+
+}
+
+.resumeCard{
+    border: 2px solid $bgTab;
+    border-radius: 10px;
+    padding: 12px 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.talents{
+    padding: 20px;
+    background-color: #0d0d0d;
+}
+.progress{
+    direction: ltr;
+    height: 6px;
+    background-color: $bgTab;
+}
+.knowledge{
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 12px;
+}
+.knowledgeCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba($bgTab,0.5);
+    border-radius: 7px;
+    // margin:5px 10px;
+    cursor:default;
+
+}
+
+
+
+/******Light Mode*******/
+
+.lightTheme .resumeCard{
+    border: none;
+}
+.lightTheme #resume div.row .col-12:nth-child(even) >*{
+    background-color:#fff4f4;
+}
+
+.lightTheme #resume div.row .col-12:nth-child(odd) >*{
+    background-color:#eef5fa;
+}
+
+.lightTheme .talents{
+    background-color:#f8fbfb;
+
+}
+
+.lightTheme .progress{
+    background-color:#edf2f2;
+}
+
+.lightTheme .knowledgeCard{
+    background-color:#edf2f2 ;
+}

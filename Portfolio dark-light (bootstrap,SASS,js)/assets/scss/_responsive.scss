@@ -1,0 +1,106 @@
+@media (max-width: 992px) {
+    #header{
+        .navbar-nav{
+            margin-top: 5px;
+            margin-right: -10px !important;
+            margin-left:  -10px !important;
+        }
+        .nav-link{
+            border-radius: 0px;
+            color:$textColor;
+            padding-top: 7px !important;
+            padding-bottom: 7px !important;
+            &:hover {
+                background-color: $bgTab;
+                color:$primaryColor ;
+                .navIcon path{
+                    fill:$primaryColor;
+                }
+            }
+            .navIcon path{
+                fill:$textColor;
+            }
+       
+        }
+         .active {
+            background-color: $bgTab;
+            color:$primaryColor !important;
+        }
+         .active .navIcon path{
+            fill:$primaryColor;
+        }
+         .nav-link:last-child{
+            padding-bottom: 12px !important;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+           .nav-link:first-child{
+            padding-top: 12px !important;
+            padding-right: 12px !important;
+          }
+          .custom-toggler.navbar-toggler {
+            border-color: rgb(244, 244, 244);
+        }
+        /* Setting the stroke to green using rgb values (0, 128, 0) */
+         
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(244, 244, 244)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+    }
+     
+}
+
+@media (max-width: 992px){
+    #about,#resume,#weblog,#contact,#works{
+        padding-right: 0;
+        padding-left: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 900px){
+    .modal-dialog{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+@media (min-width: 1100px){
+    .modal-dialog{
+        padding-right: 17%;
+        padding-left: 17%;
+    }
+}
+
+
+@media (max-width: 992px){
+    #works .weblogPic{
+        top:0;
+        
+    }
+    .lineAbout{
+        margin-right: 42px;
+    
+    }
+    .myLogo{
+        width: 120px;
+    }
+}
+
+@media (max-width: 992px){
+    .navActive{
+        color: $primaryColor !important;
+    }
+    .navActive .navIcon path{
+        fill:$primaryColor !important;
+    }
+
+    .lightTheme #header .nav-link{
+        color: #44566c;
+    }
+    .lightTheme #header .nav-link .navIcon path{
+        fill:#44566c;
+    }
+}
+

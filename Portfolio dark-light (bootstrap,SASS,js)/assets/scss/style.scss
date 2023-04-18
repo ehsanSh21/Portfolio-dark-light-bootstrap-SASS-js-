@@ -1,0 +1,36 @@
+@import 'header';
+@import 'font';
+@import 'banner';
+@import 'about';
+@import 'resume';
+@import 'works';
+@import 'weblog';
+@import 'contact';
+
+body{
+    background-image: url(../image/bg-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $bodyColor;
+     
+}
+body.lightTheme{
+  background-image: url(../image/bg-light.jpg);
+  color: $bodyColor;
+   
+}
+.modal-dialog {
+    max-width:none !important;
+    margin: 1.75rem auto;
+  }
+
+  .lightTheme section>*:first-child{
+    background-color:$bgTabLight;
+  }
+
+
+
+
+@import 'responsive';

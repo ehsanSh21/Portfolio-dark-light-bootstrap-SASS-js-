@@ -1,0 +1,88 @@
+@import 'color';
+@import 'font';
+
+#about{
+    margin-top: 20px;
+    padding-top: 70px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.innerAbout{
+    width: 100%;
+    border-radius: 20px;
+    background-color: $bgSecColor;
+    padding: 30px 10px;
+    &:hover .lineAbout{
+        margin-right: 42px;
+    }
+}
+
+.lineAbout{
+    margin-right: 75px;
+    transition-duration: .5s;
+
+}
+
+.infoSec{
+    display: flex;
+    align-items: center;
+}
+
+.infoCard{
+    background-color: $bgTab;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.infoText > * {
+    margin-bottom: 0;
+}
+
+.jobsCard{
+    border: 2px solid $bgTab;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.jobsCard:first-child svg path{
+    stroke: rgb(104, 22, 91);
+}
+
+
+
+
+
+
+/******Light Mode********/
+
+.lightTheme .infoText .whiteText{
+    color: $textColorLight;
+}
+
+.lightTheme .jobsCard{
+    border: none;
+}
+.lightTheme div.myJobs .col-md-6:nth-child(even)>*{
+background-color:#fff0f8;
+
+}
+.lightTheme div.myJobs .col-md-6:nth-child(odd)>*{
+    background-color:#f3faff;
+    
+    }
+
+    .lightTheme .infoCard{
+        background-color: #fff;
+        box-shadow: 1px 2px 4px #888888;
+    }
